@@ -5,68 +5,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inventario Dunkin</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="../../public/css/styleEntradas.cs">
+ <link rel="stylesheet" href="/prueba-2/public/css/styleEntradas.css?v=2">
 
-  <style>
-    body {
-      background: linear-gradient(#ffffff, #fef4eb);
-      margin: 0;
-      padding-top: 80px; /* espacio para navbar fija */
-    }
-
-    .navbar {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 1030;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    }
-
-    .center-container {
-      min-height: calc(100vh - 100px); /* ajusta según altura navbar */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-  </style> 
 </head>
 <body>
 
 <!-- barra de navegación -->
+<!-- Navbar principal con fondo claro -->
 <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f2f4f4;">
   <div class="container-fluid">
+
+    <!-- Logo de la empresa y título "Inventario" alineados horizontalmente -->
     <a class="navbar-brand d-flex align-items-center" href="#">
+      <!-- Imagen del logo -->
       <img src="../../imagenes/LOGO DUNKIN NUEVO 2024 sticker.png" alt="Inventario Dunkin" style="width: 150px; height: auto;" class="me-2">
+      <!-- Texto al lado del logo -->
       <span class="fs-4 text-dark">Inventario</span>
     </a>
 
+    <!-- Botón de hamburguesa para móviles (colapsa/expande el menú) -->
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
       aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
+    <!-- Contenido del navbar que se colapsa en pantallas pequeñas -->
     <div class="collapse navbar-collapse justify-content-end" id="navbarContent">
+      
+      <!-- Botones de navegación alineados a la derecha -->
       <div class="navbar-nav gap-2">
+        <!-- Botón para ver el inventario -->
         <a href="ver_inventario.php" class="btn btn-warning rounded-pill">📋 Ver Inventario</a>
+        
+        <!-- Botón para registrar salidas -->
         <a href="salidas.php" class="btn btn-info rounded-pill text-white">➕ Registrar Salidas</a>
+        
+        <!-- Botón para ver las salidas registradas -->
         <a href="verSalidas.php" class="btn btn-success rounded-pill">📦 Ver Salidas</a>
+        
+        <!-- Botón para cerrar sesión -->
         <a href="logout.php" class="btn btn-danger rounded-pill">🚪 Cerrar sesión</a>
       </div>
     </div>
+
   </div>
 </nav>
 
+
 <!-- Contenedor centrado -->
 <div class="container center-container">
-
-
-  <!-- Alerta -->
-  <?php if (isset($_GET['mensaje'])): ?>
-    <div class="alert alert-success text-center w-100" id="alerta-mensaje">
-      <?php echo htmlspecialchars($_GET['mensaje']); ?>
-    </div>
-  <?php endif; ?>
 
   <!-- Formulario -->
   <div class="card p-4 shadow-lg w-100" style="max-width: 700px; border-radius: 10px; background-color: #f2f4f4;">
@@ -112,8 +99,11 @@
   </div>
 </div>
 
+  <!--archivos js y conexion con bootstrap-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 <script src="../../public/js/entrada.js"></script>
 
+
 </body>
 </html>
+
