@@ -82,7 +82,6 @@
       <button type="submit" class="btn w-100"  style="background-color: #F5821F; color: white; border: none;">
         Registrarse
       </button>
-
       
       <div class="tex-center my-3">
         <span><a href="../../index.php">Volver al Inicio</a></span>
@@ -93,6 +92,7 @@
 
 <!--archivos js-->
 <script src="../../public/js/registro.js"></script> 
+<!-- Bootstrap JS (incluye Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>

@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         echo json_encode([
             'success' => true,
-            'redirect' => '../vistas/entradas.php',
+            'redirect' => '../vistas/inventario.php',
             'message' => 'Inicio de sesión exitoso.'
         ]);
         exit();
