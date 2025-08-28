@@ -1,0 +1,12 @@
+Array
+(
+    [tabla] => salidas
+    [id_inventario] => null
+    [id_salida] => undefined
+    [nombre_elemento] => aaa
+    [serial] => aaa
+    [modelo] => aaa
+    [activo] => aaa
+    [observaciones] => x
+    [destino] => 
+)
